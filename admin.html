@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eynesbury College | Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body onload="loadPreferences()">
+
+<header class="top-bar">
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Eynesbury College</span>
+    </div>
+    <span id="datetime"></span>
+    <span id="helloText">Hello, Visitor</span>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>You are an Admin?</h1>
+    </div>
+</section>
+
+<nav class="navbar">
+    <a href="courses.html">Courses</a>
+    <a href="password.html">Goals</a>
+    <div class="theme-switch">
+        <button id="lightMode" type="button" onclick="setTheme('light')">Light</button>
+        <span class="divider">|</span>
+        <button id="darkMode" type="button" onclick="setTheme('dark')">Dark</button>
+    </div>
+</nav>
+
+<section class="password-section">
+  <div class="password-card large">
+    <h2>Admin Login</h2>
+    <p class="subtitle">Enter admin credentials</p>
+    <input type="text" id="adminId" placeholder="Admin ID">
+    <input type="password" id="adminPass" placeholder="Admin Password">
+    <button class="primary-btn" onclick="adminLogin()">Login</button>
+    <p id="adminError" class="error-text"></p>
+  </div>
+
+  <div class="password-card large" id="adminPanel" style="display:none; margin-top:40px;">
+    <h2>All User Passwords</h2>
+
+    <!-- Clear button -->
+    <button onclick="clearPasswords()" class="primary-btn" style="margin-bottom: 20px;">Clear All Passwords</button>
+
+    <pre id="passwordList" style="text-align:left; font-size:14px;"></pre>
+  </div>
+</section>
+<footer>
+        <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

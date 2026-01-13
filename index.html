@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eynesbury College | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="loadPreferences()">
+
+<header class="top-bar">
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Eynesbury College</span>
+    </div>
+    <span id="datetime"></span>
+    <span id="helloText">Hello, Visitor</span>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome</h1>
+    </div>
+</section>
+
+<section class="name-box">
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="applyName()">Submit</button>
+</section>
+
+<nav class="navbar">
+    <a href="courses.html">Courses</a>
+    <a href="password.html">Goals</a>
+    <div class="theme-switch">
+        <button id="lightMode" type="button" onclick="setTheme('light')">Light</button>
+        <span class="divider">|</span>
+        <button id="darkMode" type="button" onclick="setTheme('dark')">Dark</button>
+    </div>
+</nav>
+
+<main class="cards">
+    <div class="card">
+        <img src="images/card1.jpg" alt="">
+        <h2>Campus Experience</h2>
+        <p>Studying at UniSA has introduced me to a diverse academic environment where lectures, workshops, and peer interaction contribute to a well-rounded university experience.</p>
+    </div>
+
+    <div class="card">
+        <img src="images/card2.jpg" alt="">
+        <h2>Learning Approach</h2>
+        <p>The learning approach emphasises understanding concepts through practical activities, allowing me to strengthen analytical thinking and apply knowledge beyond theoretical discussion.</p>
+    </div>
+
+    <div class="card">
+        <img src="images/card3.jpg" alt="">
+        <h2>Professional Direction</h2>
+        <p>This trimester has helped me identify potential professional paths within the IT industry, guiding my interest towards roles that value innovation, adaptability, and continuous learning.</p>
+    </div>
+
+    <div class="card">
+        <img src="images/card4.jpg" alt="">
+        <h2>Skill Development</h2>
+        <p>Through consistent practice and coursework, I am developing transferable skills such as critical reasoning, technical accuracy, and structured problem-solving.</p>
+    </div>
+
+    <div class="card">
+        <img src="images/card5.jpg" alt="">
+        <h2>Applied Coursework</h2>
+        <p>Course activities encourage applying concepts to realistic scenarios, improving my confidence in managing tasks that reflect real-world IT challenges.</p>
+    </div>
+
+    <div class="card">
+        <img src="images/card6.jpg" alt="">
+        <h2>Academic Progression</h2>
+        <p>Moving forward, I aim to expand my knowledge in advanced computing topics while maintaining a strong foundation in core information technology principles.</p>
+    </div>
+</main>
+<footer>
+        <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

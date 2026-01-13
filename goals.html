@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eynesbury College | Goals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="script.js" defer></script>
+</head>
+<body onload="loadPreferences()">
+
+<div class="top-bar">
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Eynesbury College</span>
+    </div>
+    <span id="datetime"></span>
+    <span id="helloText">Hello, Visitor</span>
+</div>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Enter Your Goals</h1>
+    </div>
+</section>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <div class="theme-switch">
+        <button id="lightMode" type="button" onclick="setTheme('light')">Light</button>
+        <span class="divider">|</span>
+        <button id="darkMode" type="button" onclick="setTheme('dark')">Dark</button>
+    </div>
+</nav>
+
+<section class="goals-wrapper">
+    <div class="goals-card">
+        <h2>Your Goals</h2>
+        <p class="subtitle">Write, track and manage your goals</p>
+
+        <div class="goal-input">
+            <input type="text" id="goalInput" placeholder="Enter a new goal">
+            <div class="goal-buttons">
+                <button onclick="addGoal()">Add</button>
+                <button onclick="clearGoals()">Clear</button>
+            </div>
+        </div>
+
+        <ul id="goalList" class="goal-list"></ul>
+    </div>
+</section>
+<footer>
+        <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
