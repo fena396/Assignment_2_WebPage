@@ -1,60 +1,108 @@
 <!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Eynesbury College | Admin</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Page title shown in browser tab -->
+    <title>Eynesbury College | Admin</title>
+
+    <!-- Makes the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript file (loaded after HTML) -->
+    <script src="script.js" defer></script>
 </head>
+
+<!-- Calls loadPreferences() function when page loads -->
 <body onload="loadPreferences()">
 
+<!-- ================= HEADER SECTION ================= -->
 <header class="top-bar">
+    <!-- Logo and college name -->
     <div class="logo">
         <i class="fa-solid fa-graduation-cap"></i>
         <span>Eynesbury College</span>
     </div>
+
+    <!-- Displays current date and time -->
     <span id="datetime"></span>
+
+    <!-- Displays greeting text -->
     <span id="helloText">Hello, Visitor</span>
 </header>
 
+<!-- ================= HERO SECTION ================= -->
 <section class="hero">
     <div class="hero-overlay">
+        <!-- Page heading -->
         <h1>You are an Admin?</h1>
     </div>
 </section>
 
+<!-- ================= NAVIGATION BAR ================= -->
 <nav class="navbar">
+    <!-- Link to courses page -->
     <a href="courses.html">Courses</a>
+
+    <!-- Link to goals/password page -->
     <a href="password.html">Goals</a>
+
+    <!-- Theme switch buttons -->
     <div class="theme-switch">
+        <!-- Light mode button -->
         <button id="lightMode" type="button" onclick="setTheme('light')">Light</button>
         <span class="divider">|</span>
+        <!-- Dark mode button -->
         <button id="darkMode" type="button" onclick="setTheme('dark')">Dark</button>
     </div>
 </nav>
 
+<!-- ================= ADMIN LOGIN SECTION ================= -->
 <section class="password-section">
+
+  <!-- Admin login card -->
   <div class="password-card large">
     <h2>Admin Login</h2>
     <p class="subtitle">Enter admin credentials</p>
+
+    <!-- Admin ID input -->
     <input type="text" id="adminId" placeholder="Admin ID">
+
+    <!-- Admin password input -->
     <input type="password" id="adminPass" placeholder="Admin Password">
+
+    <!-- Login button -->
     <button class="primary-btn" onclick="adminLogin()">Login</button>
+
+    <!-- Error message display -->
     <p id="adminError" class="error-text"></p>
   </div>
 
+  <!-- ================= ADMIN PANEL ================= -->
+  <!-- Hidden by default, shown after successful login -->
   <div class="password-card large" id="adminPanel" style="display:none; margin-top:40px;">
     <h2>All User Passwords</h2>
 
-    <!-- Clear button -->
-    <button onclick="clearPasswords()" class="primary-btn" style="margin-bottom: 20px;">Clear All Passwords</button>
+    <!-- Button to clear all stored passwords -->
+    <button onclick="clearPasswords()" class="primary-btn" style="margin-bottom: 20px;">
+        Clear All Passwords
+    </button>
 
+    <!-- Displays list of stored passwords -->
     <pre id="passwordList" style="text-align:left; font-size:14px;"></pre>
   </div>
+
 </section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-        <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
-    </footer>
+    <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
