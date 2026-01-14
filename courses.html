@@ -1,76 +1,32 @@
 <!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Page title shown in browser tab -->
     <title>Eynesbury College | Courses</title>
+
+    <!-- Ensures responsive design on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome icons library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External JavaScript file -->
     <script src="script.js" defer></script>
 </head>
+
+<!-- Loads user preferences (theme, greeting, etc.) when page loads -->
 <body onload="loadPreferences()">
 
+<!-- ================= HEADER SECTION ================= -->
 <header class="top-bar">
+    <!-- Logo and college name -->
     <div class="logo">
         <i class="fa-solid fa-graduation-cap"></i>
         <span>Eynesbury College</span>
-    </div>
-    <span id="datetime"></span>
-    <span id="helloText">Hello, Visitor</span>
-</header>
-
-<section class="hero">
-    <div class="hero-overlay">
-        <h1>Courses</h1>
-    </div>
-</section>
-
-<nav class="navbar">
-    <a href="admin.html" id="adminLink">Admin</a>
-    <a href="index.html">Home</a>
-    <a href="password.html">Goals</a>
-    <div class="theme-switch">
-        <button id="lightMode" type="button" onclick="setTheme('light')">Light</button>
-        <span class="divider">|</span>
-        <button id="darkMode" type="button" onclick="setTheme('dark')">Dark</button>
-    </div>
-</nav>
-
-<main class="courses-container">
-    <div class="course-card">
-        <img src="images/course1.jpg" alt="IT Fundamentals">
-        <div class="course-content">
-            <h2>Information Technology Fundamentals</h2>
-            <p>This course introduces the foundational concepts of information technology, including hardware, software, data, and basic system operations essential for further IT studies.</p>
-        </div>
-    </div>
-
-    <div class="course-card">
-        <img src="images/course2.jpg" alt="Programming">
-        <div class="course-content">
-            <h2>Programming for Problem Solving</h2>
-            <p>This course focuses on developing logical thinking and structured problem-solving skills through basic programming concepts and algorithmic approaches.</p>
-        </div>
-    </div>
-
-    <div class="course-card">
-        <img src="images/course3.jpg" alt="Networking">
-        <div class="course-content">
-            <h2>Network Fundamentals</h2>
-            <p>This course covers the core principles of computer networking, including network types, communication models, and fundamental network infrastructure concepts.</p>
-        </div>
-    </div>
-
-    <div class="course-card">
-        <img src="images/course4.jpg" alt="Design Thinking">
-        <div class="course-content">
-            <h2>Design Thinking Studio</h2>
-            <p>This studio-based course develops creative thinking and user-centred problem-solving skills through structured design thinking processes and practical activities.</p>
-        </div>
-    </div>
-</main>
-<footer>
-        <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
-    </footer>
-</body>
-</html>
