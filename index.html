@@ -1,84 +1,160 @@
 <!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Page title shown in browser tab -->
     <title>Eynesbury College | Home</title>
+
+    <!-- Ensures responsive layout on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome icons library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External JavaScript file -->
     <script src="script.js" defer></script>
 </head>
+
+<!-- Loads saved user preferences when page loads -->
 <body onload="loadPreferences()">
 
+<!-- ================= HEADER / TOP BAR ================= -->
 <header class="top-bar">
+    <!-- Logo and college name -->
     <div class="logo">
         <i class="fa-solid fa-graduation-cap"></i>
         <span>Eynesbury College</span>
     </div>
+
+    <!-- Displays current date and time -->
     <span id="datetime"></span>
+
+    <!-- Displays greeting message -->
     <span id="helloText">Hello, Visitor</span>
 </header>
 
+<!-- ================= HERO SECTION ================= -->
 <section class="hero">
     <div class="hero-overlay">
+        <!-- Welcome heading -->
         <h1>Welcome</h1>
     </div>
 </section>
 
+<!-- ================= USER NAME INPUT ================= -->
 <section class="name-box">
+    <!-- Input field for user's name -->
     <input type="text" id="username" placeholder="Enter your name">
+
+    <!-- Button to save and apply name -->
     <button onclick="applyName()">Submit</button>
 </section>
 
+<!-- ================= NAVIGATION BAR ================= -->
 <nav class="navbar">
+    <!-- Link to courses page -->
     <a href="courses.html">Courses</a>
+
+    <!-- Link to goals page -->
     <a href="password.html">Goals</a>
+
+    <!-- Theme switch buttons -->
     <div class="theme-switch">
+        <!-- Light mode button -->
         <button id="lightMode" type="button" onclick="setTheme('light')">Light</button>
         <span class="divider">|</span>
+        <!-- Dark mode button -->
         <button id="darkMode" type="button" onclick="setTheme('dark')">Dark</button>
     </div>
 </nav>
 
+<!-- ================= MAIN CONTENT / CARDS ================= -->
 <main class="cards">
+
+    <!-- Card 1 -->
     <div class="card">
+        <!-- Image representing campus experience -->
         <img src="images/card1.jpg" alt="">
         <h2>Campus Experience</h2>
-        <p>Studying at UniSA has introduced me to a diverse academic environment where lectures, workshops, and peer interaction contribute to a well-rounded university experience.</p>
+        <p>
+            Studying at UniSA has introduced me to a diverse academic environment where
+            lectures, workshops, and peer interaction contribute to a well-rounded
+            university experience.
+        </p>
     </div>
 
+    <!-- Card 2 -->
     <div class="card">
+        <!-- Image representing learning approach -->
         <img src="images/card2.jpg" alt="">
         <h2>Learning Approach</h2>
-        <p>The learning approach emphasises understanding concepts through practical activities, allowing me to strengthen analytical thinking and apply knowledge beyond theoretical discussion.</p>
+        <p>
+            The learning approach emphasises understanding concepts through practical
+            activities, allowing me to strengthen analytical thinking and apply knowledge
+            beyond theoretical discussion.
+        </p>
     </div>
 
+    <!-- Card 3 -->
     <div class="card">
+        <!-- Image representing professional direction -->
         <img src="images/card3.jpg" alt="">
         <h2>Professional Direction</h2>
-        <p>This trimester has helped me identify potential professional paths within the IT industry, guiding my interest towards roles that value innovation, adaptability, and continuous learning.</p>
+        <p>
+            This trimester has helped me identify potential professional paths within the
+            IT industry, guiding my interest towards roles that value innovation,
+            adaptability, and continuous learning.
+        </p>
     </div>
 
+    <!-- Card 4 -->
     <div class="card">
+        <!-- Image representing skill development -->
         <img src="images/card4.jpg" alt="">
         <h2>Skill Development</h2>
-        <p>Through consistent practice and coursework, I am developing transferable skills such as critical reasoning, technical accuracy, and structured problem-solving.</p>
+        <p>
+            Through consistent practice and coursework, I am developing transferable
+            skills such as critical reasoning, technical accuracy, and structured
+            problem-solving.
+        </p>
     </div>
 
+    <!-- Card 5 -->
     <div class="card">
+        <!-- Image representing applied coursework -->
         <img src="images/card5.jpg" alt="">
         <h2>Applied Coursework</h2>
-        <p>Course activities encourage applying concepts to realistic scenarios, improving my confidence in managing tasks that reflect real-world IT challenges.</p>
+        <p>
+            Course activities encourage applying concepts to realistic scenarios,
+            improving my confidence in managing tasks that reflect real-world IT
+            challenges.
+        </p>
     </div>
 
+    <!-- Card 6 -->
     <div class="card">
+        <!-- Image representing academic progression -->
         <img src="images/card6.jpg" alt="">
         <h2>Academic Progression</h2>
-        <p>Moving forward, I aim to expand my knowledge in advanced computing topics while maintaining a strong foundation in core information technology principles.</p>
+        <p>
+            Moving forward, I aim to expand my knowledge in advanced computing topics
+            while maintaining a strong foundation in core information technology
+            principles.
+        </p>
     </div>
+
 </main>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-        <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
-    </footer>
+    <p>&copy; 2026 Eynesbury College. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
