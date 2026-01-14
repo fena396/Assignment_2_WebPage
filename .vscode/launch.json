@@ -1,14 +1,28 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // Version of the launch configuration schema
+    // Do not change unless you know what you're doing
     "version": "0.2.0",
+
+    // List of configurations for debugging
     "configurations": [
         {
+            // Type of debugger to use
+            // "chrome" launches a debugging session in Google Chrome
             "type": "chrome",
+
+            // Request type specifies how the debugger should start
+            // "launch" means start a new browser session
             "request": "launch",
+
+            // Friendly name for this configuration
             "name": "Launch Chrome against localhost",
+
+            // URL to open when launching Chrome
+            // Typically points to your local development server
             "url": "http://localhost:8080",
+
+            // Maps the local workspace folder to the web root
+            // This helps VS Code map source files to the browser for debugging
             "webRoot": "${workspaceFolder}"
         }
     ]
